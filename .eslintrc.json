@@ -1,0 +1,89 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "parserOptions": {
+          "project": [
+            "tsconfig.json"
+          ],
+          "createDefaultProgram": true
+        },
+        "extends": [
+          "plugin:prettier/recommended"
+        ],
+        "rules": {
+          "prettier/prettier": "error",
+          "array-callback-return": "off",
+          "curly": "error",
+          "eol-last": "error",
+          "no-restricted-imports": [
+            "error",
+            "rxjs/Rx"
+          ],
+          "keyword-spacing": "error",
+          "max-len": [
+            "error",
+            140
+          ],
+          "no-console": "error",
+          "no-empty": "off",
+          "no-fallthrough": "error",
+          "no-var": "error",
+          "space-before-function-paren": [
+            "error",
+            "never"
+          ], 
+          "camelcase": [
+            "error",
+            {
+              "properties": "always"
+            }
+          ],
+          "no-irregular-whitespace": "error",
+          "no-whitespace-before-property": "error",
+          "no-eval": "error",
+          "no-caller": "error",
+          "no-new": "error",
+          "no-bitwise": "error",
+          "no-new-wrappers": "error",
+          "no-debugger": "error",
+          "no-duplicate-imports": "error",
+          "constructor-super": "error",
+          "no-throw-literal": "error",
+          "dot-notation": "error",
+          "no-trailing-spaces": "error",
+          "no-undef-init": "error",
+          "no-unused-expressions": "error",
+          "no-unused-vars": [ "error", { "argsIgnorePattern": "^_" } ],
+          "prefer-const": "error",
+          "radix": "error",
+          "no-lonely-if": "error",
+          "no-unreachable": "error",
+          "default-case": "error",
+          "comma-spacing": ["error", { "before": false, "after": true }],
+          "no-multi-spaces": "error",
+          "eqeqeq": [
+            "error",
+            "smart"
+          ],
+          "no-multiple-empty-lines": [
+            "error",
+            {
+              "max": 1,
+              "maxEOF": 1
+            }
+          ]
+        }
+      }
+    ]
+  }
+   
+  
